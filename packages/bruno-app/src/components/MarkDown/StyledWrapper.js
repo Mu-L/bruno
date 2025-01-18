@@ -2,7 +2,6 @@ import styled from 'styled-components';
 
 const StyledMarkdownBodyWrapper = styled.div`
   background: transparent;
-  height: inherit;
   .markdown-body {
     background: transparent;
     overflow-y: auto;
@@ -56,7 +55,7 @@ const StyledMarkdownBodyWrapper = styled.div`
       height: 1px;
       padding: 0;
       margin: 24px 0;
-      background-color: var(--color-border-default);
+      background-color: var(--color-sidebar-collection-item-active-indent-border);
       border: 0;
     }
 
@@ -70,6 +69,7 @@ const StyledMarkdownBodyWrapper = styled.div`
 
     pre {
       background: ${(props) => props.theme.sidebar.bg};
+      color: ${(props) => props.theme.text};
     }
 
     table {
